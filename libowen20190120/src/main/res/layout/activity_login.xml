@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:id="@+id/user_img"
+        />
+    <Button
+        android:id="@+id/share_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享"
+        android:background="#fff"
+        android:layout_alignParentRight="true"
+        />
+    <!--<com.recker.flybanner.FlyBanner
+        android:layout_below="@id/user_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/pager"
+        ></com.recker.flybanner.FlyBanner>-->
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/user_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/pager"></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:layout_below="@id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_name"
+        />
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_below="@id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#f00"
+        />
+    <Button
+        android:id="@+id/share_qq"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加入购物车"
+        android:background="#f00"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>
